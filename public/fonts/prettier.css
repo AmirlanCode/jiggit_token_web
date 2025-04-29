@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+/* Prettier is not a Google Font, but Preahvihear is a pretty, rounded sans-serif font similar in vibe. */
+
+body, html, * {
+  font-family: 'Preahvihear', 'Spectral SC', serif !important;
+}
