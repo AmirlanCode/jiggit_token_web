@@ -1,20 +1,20 @@
-import React from 'react';
-import styled, { keyframes, createGlobalStyle } from 'styled-components';
-import { motion } from 'framer-motion';
-import { FaTelegram, FaMedium } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
-import AnimatedBg from './components/AnimatedBg';
-import HeroSection from './components/HeroSection';
-import Roadmap from './components/RoadmapSection';
+import React from "react";
+import styled, { keyframes, createGlobalStyle } from "styled-components";
+import { motion } from "framer-motion";
+import { FaTelegram, FaMedium } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import AnimatedBg from "./components/AnimatedBg";
+import HeroSection from "./components/HeroSection";
+import Roadmap from "./components/RoadmapSection";
 
 // Refined pixel palette for dark orange, yellow, brown
-const darkOrange = '#c97d3d';
-const richBrown = '#5a3b1b';
-const goldYellow = '#f7c873';
-const deepYellow = '#e8b03b';
-const lightBrown = '#a67c52';
-const pixelDark = '#23190f';
-const pixelLight = '#f7eee1';
+const darkOrange = "#c97d3d";
+const richBrown = "#5a3b1b";
+const goldYellow = "#f7c873";
+const deepYellow = "#e8b03b";
+const lightBrown = "#a67c52";
+const pixelDark = "#23190f";
+const pixelLight = "#f7eee1";
 
 // Assign main colors
 const background = pixelDark;
@@ -48,7 +48,7 @@ const Navbar = styled.nav`
   position: sticky;
   top: 0.5rem;
   z-index: 1000;
-  
+
   @media (max-width: 900px) {
     width: 95vw;
     max-width: 95vw;
@@ -56,7 +56,7 @@ const Navbar = styled.nav`
     gap: 0.8rem;
     flex-wrap: wrap;
   }
-  
+
   @media (max-width: 600px) {
     width: 94vw;
     max-width: 94vw;
@@ -73,12 +73,12 @@ const NavbarToken = styled.div`
   font-weight: 900;
   color: #181818;
   white-space: nowrap;
-  
+
   @media (max-width: 900px) {
     font-size: 1.4rem;
     order: 1;
   }
-  
+
   @media (max-width: 600px) {
     font-size: 1.2rem;
     width: 100%;
@@ -91,7 +91,7 @@ const NavbarLinks = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 0.8rem;
-  
+
   @media (max-width: 900px) {
     order: 2;
     justify-content: center;
@@ -119,20 +119,20 @@ const NavbarLinkButton = styled.a`
   align-items: center;
   justify-content: center;
   min-width: fit-content;
-  
+
   @media (max-width: 900px) {
     font-size: 0.9rem;
     padding: 0.35rem 0.9rem;
     border-width: 2px;
   }
-  
+
   @media (max-width: 600px) {
     font-size: 0.8rem;
     padding: 0.3rem 0.7rem;
     border-width: 2px;
     box-shadow: 1px 2px 0 0 #181818;
   }
-  
+
   &:hover {
     background: ${accent};
     color: #fff1b8;
@@ -147,12 +147,12 @@ const NavbarIcons = styled.div`
   align-items: center;
   gap: 1rem;
   margin-left: auto;
-  
+
   @media (max-width: 900px) {
     order: 3;
     gap: 0.8rem;
   }
-  
+
   @media (max-width: 600px) {
     width: 100%;
     justify-content: center;
@@ -174,15 +174,15 @@ const NavbarIcon = styled.a`
 `;
 
 const NavbarBuyButton = styled.a`
-  background: linear-gradient(135deg, #FFD700, #DAA520);
+  background: linear-gradient(135deg, #ffd700, #daa520);
   color: #181818;
-  border: 2.5px solid #8B4513;
+  border: 2.5px solid #8b4513;
   border-radius: 1.3rem;
   padding: 0.4rem 1.15rem;
   font-family: ${pixelFont};
   font-size: 1rem;
   font-weight: 900;
-  box-shadow: 1.5px 2.5px 0 0 #8B4513, inset 0 0 5px rgba(139, 69, 19, 0.5);
+  box-shadow: 1.5px 2.5px 0 0 #8b4513, inset 0 0 5px rgba(139, 69, 19, 0.5);
   text-decoration: none;
   margin-left: 0.6rem;
   transition: all 0.17s ease;
@@ -194,27 +194,28 @@ const NavbarBuyButton = styled.a`
   align-items: center;
   justify-content: center;
   letter-spacing: 0.5px;
-  
+
   @media (max-width: 900px) {
     font-size: 0.85rem;
     padding: 0.3rem 0.9rem;
     margin-left: 0.2rem;
   }
-  
+
   @media (max-width: 600px) {
     font-size: 0.75rem;
     padding: 0.2rem 0.6rem;
     margin: 0.15rem;
     border-radius: 1rem;
-    box-shadow: 0.5px 1.5px 0 0 #8B4513, inset 0 0 3px rgba(139, 69, 19, 0.5);
+    box-shadow: 0.5px 1.5px 0 0 #8b4513, inset 0 0 3px rgba(139, 69, 19, 0.5);
   }
-  
+
   &:hover {
-    background: linear-gradient(135deg, #FFE066, #E6B800);
+    background: linear-gradient(135deg, #ffe066, #e6b800);
     color: #181818;
-    border-color: #8B4513;
+    border-color: #8b4513;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(218, 165, 32, 0.6), inset 0 0 5px rgba(139, 69, 19, 0.5);
+    box-shadow: 0 4px 12px rgba(218, 165, 32, 0.6),
+      inset 0 0 5px rgba(139, 69, 19, 0.5);
   }
 `;
 
@@ -229,11 +230,11 @@ const AppContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   overflow-x: hidden;
-  
+
   @media (max-width: 900px) {
     margin: 1rem auto 0;
   }
-  
+
   @media (max-width: 600px) {
     margin: 0.5rem auto 0;
   }
@@ -281,9 +282,9 @@ const BottomSection = styled.section`
 const BottomBuyButton = styled.a`
   display: block;
   margin: 2.2rem auto 0 auto;
-  background: linear-gradient(135deg, #FFD700, #DAA520);
+  background: linear-gradient(135deg, #ffd700, #daa520);
   color: #181818;
-  border: 2.5px solid #8B4513;
+  border: 2.5px solid #8b4513;
   font-family: ${pixelFont};
   font-size: 2rem;
   font-weight: bold;
@@ -374,18 +375,52 @@ function App() {
       <Navbar>
         <NavbarToken>$JIGGIT</NavbarToken>
         <NavbarLinks>
-          <NavbarLinkButton href="https://t.me/jiggit" target="_blank" rel="noopener noreferrer">Telegram</NavbarLinkButton>
-          <NavbarLinkButton href="https://medium.com/@zerobladeamir" target="_blank" rel="noopener noreferrer">Medium</NavbarLinkButton>
-          <NavbarLinkButton href="https://twitter.com/jiggit" target="_blank" rel="noopener noreferrer">X</NavbarLinkButton>
-          <NavbarBuyButton href="#buy" target="_blank" rel="noopener noreferrer">Buy $JIGGIT</NavbarBuyButton>
+          <NavbarLinkButton
+            href="https://t.me/jiggit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Telegram
+          </NavbarLinkButton>
+          <NavbarLinkButton
+            href="https://medium.com/@zerobladeamir"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Medium
+          </NavbarLinkButton>
+          <NavbarLinkButton
+            href="https://twitter.com/jiggit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X
+          </NavbarLinkButton>
+          <NavbarBuyButton
+            href="#buy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy $JIGGIT
+          </NavbarBuyButton>
         </NavbarLinks>
         <NavbarIcons>
           {/* Example icons, replace href and icons as needed */}
-          <NavbarIcon href="#"><i className="fa fa-paper-plane" /></NavbarIcon>
-          <NavbarIcon href="#"><i className="fa fa-times" /></NavbarIcon>
-          <NavbarIcon href="#"><i className="fa fa-podcast" /></NavbarIcon>
-          <NavbarIcon href="#"><i className="fa fa-user-secret" /></NavbarIcon>
-          <NavbarIcon href="#"><i className="fa fa-gift" /></NavbarIcon>
+          <NavbarIcon href="#">
+            <i className="fa fa-paper-plane" />
+          </NavbarIcon>
+          <NavbarIcon href="#">
+            <i className="fa fa-times" />
+          </NavbarIcon>
+          <NavbarIcon href="#">
+            <i className="fa fa-podcast" />
+          </NavbarIcon>
+          <NavbarIcon href="#">
+            <i className="fa fa-user-secret" />
+          </NavbarIcon>
+          <NavbarIcon href="#">
+            <i className="fa fa-gift" />
+          </NavbarIcon>
         </NavbarIcons>
       </Navbar>
       <AppContainer>
@@ -393,7 +428,9 @@ function App() {
         <Roadmap />
       </AppContainer>
       <BottomSection>
-        <BottomBuyButton href="#buy" target="_blank" rel="noopener noreferrer">Buy $Jiggit</BottomBuyButton>
+        <BottomBuyButton href="#buy" target="_blank" rel="noopener noreferrer">
+          Buy $Jiggit
+        </BottomBuyButton>
         <BottomSubtext>→ Powered by Jiggit token team</BottomSubtext>
         <BottomMascot src="/assets/mascot_bottom.png" alt="Jiggit Mascot" />
       </BottomSection>

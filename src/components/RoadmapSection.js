@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const pixelFont = "'Press Start 2P', 'Spectral SC', monospace";
 
@@ -17,7 +17,7 @@ const RoadmapList = styled.ul`
   flex-direction: row;
   justify-content: center;
   gap: 1.5rem;
-  padding: 0;
+  padding: 1rem;
   margin: 0;
   list-style: none;
   @media (max-width: 700px) {
@@ -67,8 +67,8 @@ const Roadmap = () => (
     <RoadmapTitle>ROADMAP</RoadmapTitle>
     <RoadmapList>
       <RoadmapField>Phase 1: Launch & Community</RoadmapField>
-      <RoadmapField>Phase 2: Game Integration</RoadmapField>
-      <RoadmapField>Phase 3: Marketplace & Rewards</RoadmapField>
+      <RoadmapField>Phase 2: Game and competitions</RoadmapField>
+      <RoadmapField>Phase 3: Rewards</RoadmapField>
     </RoadmapList>
   </RoadmapSection>
 );
