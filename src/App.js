@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import AnimatedBg from "./components/AnimatedBg";
 import HeroSection from "./components/HeroSection";
 import Roadmap from "./components/RoadmapSection";
+import TokenAddressComponent from "./components/TokenAddressContainer";
 
 // Refined pixel palette for dark orange, yellow, brown
 const darkOrange = "#c97d3d";
@@ -376,7 +377,7 @@ function App() {
         <NavbarToken>$JIGGIT</NavbarToken>
         <NavbarLinks>
           <NavbarLinkButton
-            href="https://t.me/jiggit"
+            href="https://t.me/+rTaGxEFQEW44NDJi"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -390,7 +391,7 @@ function App() {
             Medium
           </NavbarLinkButton>
           <NavbarLinkButton
-            href="https://twitter.com/jiggit"
+            href="https://x.com/AmirlanSol"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -425,6 +426,7 @@ function App() {
       </Navbar>
       <AppContainer>
         <HeroSection />
+        <TokenAddressComponent address="0x355fb0acf3dfac10aa51d083e75cb1491940a639aa9cc117dba198135e0ccb44" />
         <Roadmap />
       </AppContainer>
       <BottomSection>

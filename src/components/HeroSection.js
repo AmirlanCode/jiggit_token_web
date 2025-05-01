@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import TokenAddressComponent from "./TokenAddressContainer";
 
 // Enhanced Hero Section with improved visibility and responsiveness
 const HeroRow = styled.div`
