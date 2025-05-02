@@ -398,7 +398,7 @@ function App() {
             X
           </NavbarLinkButton>
           <NavbarBuyButton
-            href="#buy"
+            href="https://aftermath.finance/pools/0x0aa9c12deb3fccaec2f9d8d8911d7eb58a0ebc50e375b059f8c044335c37f28b"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -430,7 +430,11 @@ function App() {
         <Roadmap />
       </AppContainer>
       <BottomSection>
-        <BottomBuyButton href="#buy" target="_blank" rel="noopener noreferrer">
+        <BottomBuyButton
+          href="https://aftermath.finance/pools/0x0aa9c12deb3fccaec2f9d8d8911d7eb58a0ebc50e375b059f8c044335c37f28b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Buy $Jiggit
         </BottomBuyButton>
         <BottomSubtext>→ Powered by Jiggit token team</BottomSubtext>
