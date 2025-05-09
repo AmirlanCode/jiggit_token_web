@@ -405,7 +405,7 @@ function App() {
             Whitepaper
           </NavbarLinkButton>
           <NavbarBuyButton
-            href="https://aftermath.finance/pools/0x0aa9c12deb3fccaec2f9d8d8911d7eb58a0ebc50e375b059f8c044335c37f28b"
+            href="https://app.cetus.zone/swap/0x2::sui::SUI/0x355fb0acf3dfac10aa51d083e75cb1491940a639aa9cc117dba198135e0ccb44::jiggit::JIGGIT"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -438,7 +438,7 @@ function App() {
       </AppContainer>
       <BottomSection>
         <BottomBuyButton
-          href="https://aftermath.finance/pools/0x0aa9c12deb3fccaec2f9d8d8911d7eb58a0ebc50e375b059f8c044335c37f28b"
+          href="https://app.cetus.zone/swap/0x2::sui::SUI/0x355fb0acf3dfac10aa51d083e75cb1491940a639aa9cc117dba198135e0ccb44::jiggit::JIGGIT"
           target="_blank"
           rel="noopener noreferrer"
         >
